@@ -4,7 +4,7 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "playwright": "npx playwright test --config=playwright/playwright.config.ts"
+    "playwright": "QA_VIA_SCRIPT=1 npx playwright test --config=playwright/playwright.config.ts"
   },
   "devDependencies": {
     "@playwright/test": "^1.61.0",

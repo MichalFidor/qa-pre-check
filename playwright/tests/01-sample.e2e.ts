@@ -6,7 +6,7 @@ test.describe('Sample test suite', () => {
 
         await page.goto('https://www.google.com');
 
-        const ranViaScript = process.env.npm_lifecycle_event === 'playwright';
+        const ranViaScript = process.env.QA_VIA_SCRIPT === '1';
         if (ranViaScript) {
             console.log('🎉 Congratulations! You ran the tests the right way.');
         } else {
